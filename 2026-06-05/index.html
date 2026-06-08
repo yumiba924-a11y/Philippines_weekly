@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Philippines Weekly | CQC Capital Quest Corporation 投資調査部</title>
+<link rel="canonical" href="https://yumiba924-a11y.github.io/Philippines_weekly/2026-06-05/index.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="CQC Philippines Weekly">
+<meta property="og:title" content="Philippines Weekly — 6/1〜6/5｜PSEi +1.54%反発。原油反落・CPI鈍化、それでも利上げは続く">
+<meta property="og:description" content="ブレント$100割れと5月CPI 6.8%鈍化で供給ショックが一服、PSEiは+1.54%反発。先週最弱のICTが+13.62%で逆転主導。だが6/18 BSP会合は利上げ観測続く。Capital Quest Corporation, Ltd. 投資調査部 週次レポート。">
+<meta property="og:image" content="https://yumiba924-a11y.github.io/Philippines_weekly/2026-06-05/ph_photos/photo01.jpg">
+<meta property="og:url" content="https://yumiba924-a11y.github.io/Philippines_weekly/2026-06-05/index.html">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Philippines Weekly — 6/1〜6/5｜CQC投資調査部">
+<meta name="twitter:description" content="PSEi +1.54%反発。原油反落・CPI 6.8%鈍化で供給ショック一服。だが利上げは続く。">
+<meta name="twitter:image" content="https://yumiba924-a11y.github.io/Philippines_weekly/2026-06-05/ph_photos/photo01.jpg">
+
+<style>
+  :root {
+    --font-mincho: "Hiragino Mincho ProN","Hiragino Mincho Pro","Yu Mincho","YuMincho","ＭＳ 明朝",serif;
+    --font-gothic: "Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic Medium",YuGothic,"Yu Gothic","Meiryo UI",Meiryo,"Noto Sans JP",system-ui,-apple-system,sans-serif;
+    --font-sans-en: "Helvetica Neue",Helvetica,Arial,"Liberation Sans",sans-serif;
+    --cri-green: #00492C;
+    --cri-green-dark: #002D1A;
+    --cri-green-light: #1a6641;
+    --vn-red: #DA251D;
+    --vn-gold: #F5C400;
+    --vn-gold-light: #FDE96B;
+    --white: #FFFFFF;
+    --cream: #FAF8F2;
+    --cream-dark: #F0EBE0;
+    --text-dark: #1A1A1A;
+    --text-mid: #4A4A4A;
+    --text-light: #888;
+    --up-color: #00A86B;
+    --down-color: #DA251D;
+    --border: rgba(0,73,44,0.12);
+  }
+
+  /* ── NUMBER FONT: Helvetica (CQC HP準拠) ── */
+  .hero-kpi-value,
+  .stat-value,
+  .sector-return,
+  .mover-return,
+  .macro-value,
+  .risk-stat-val,
+  .fact-number,
+  .footer-date,
+  .hero-kpi-value.positive,
+  .hero-kpi-value.negative {
+    font-family: var(--font-sans-en) !important;
+    letter-spacing: -0.01em;
+  }
+
+  /* ── 日本語見出し: 明朝（CQC HP準拠） ── */
+  .column-em {
+    font-family: var(--font-mincho) !important;
+    letter-spacing: -0.02em;
+  }
+
+  .ext-val {
+    font-family: var(--font-sans-en) !important;
+    font-weight: 600;
+  }
+
+
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-mincho);
+    background: var(--white);
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    background: var(--cri-green-dark);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── SLIDESHOW ── */
+  .hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+    animation: kenBurns 8s ease-out forwards;
+  }
+
+  .hero-slide.active {
+    opacity: 1;
+  }
+
+  @keyframes kenBurns {
+    0%   { transform: scale(1.0) translate(0%, 0%); }
+    100% { transform: scale(1.07) translate(-1%, -0.5%); }
+  }
+
+  @keyframes kenBurnsAlt {
+    0%   { transform: scale(1.07) translate(-1%, 0%); }
+    100% { transform: scale(1.0) translate(0.5%, -0.5%); }
+  }
+
+  .hero-slide:nth-child(even) {
+    animation-name: kenBurnsAlt;
+  }
+
+  /* ── VIDEO ── */
+  .hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  .hero-video.active { opacity: 1; }
+
+  /* ── SLIDE DOTS ── */
+  .hero-dots {
+    position: absolute;
+    bottom: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 20;
+  }
+
+  .hero-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .hero-dot.active {
+    background: var(--vn-gold);
+    width: 24px;
+    border-radius: 3px;
+  }
+
+  /* ── SLIDE ARROWS ── */
+  .hero-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.7);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size:22px;
+    transition: background 0.2s, color 0.2s;
+    user-select: none;
+  }
+
+  .hero-arrow:hover {
+    background: rgba(245,196,0,0.2);
+    color: var(--vn-gold);
+    border-color: var(--vn-gold);
+  }
+
+  .hero-arrow-left  { left: 32px; }
+  .hero-arrow-right { right: 32px; }
+
+  /* ── SLIDE COUNTER ── */
+  .hero-counter {
+    position: absolute;
+    bottom: 140px;
+    right: 48px;
+    z-index: 20;
+    font-family: var(--font-sans-en);
+    font-size:17px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.1em;
+  }
+
+  .hero-bg-pattern {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    /* 明るい素材を活かす：中央はほぼ素のまま、上下だけ薄く締めて文字を守る */
+    background:
+      linear-gradient(to bottom, rgba(0,0,0,0.26) 0%, rgba(0,0,0,0.06) 24%, rgba(0,0,0,0.06) 56%, rgba(0,0,0,0.50) 100%);
+  }
+
+  .hero-diagonal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: var(--white);
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  }
+
+  .hero-nav {
+    position: relative;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 80px;
+  }
+
+  .hero-logo {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .hero-logo-img {
+    height: 64px;
+    width: auto;
+    display: block;
+  }
+
+  .logo-text {
+    color: var(--white);
+    font-size:18px;
+    letter-spacing: 0.15em;
+    font-family: var(--font-sans-en);
+    opacity: 0.7;
+    line-height: 1.6;
+    font-weight: 400;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    padding-left: 18px;
+  }
+
+  .hero-date-badge {
+    background: rgba(245,196,0,0.15);
+    border: 1px solid rgba(245,196,0,0.3);
+    color: var(--vn-gold);
+    font-family: var(--font-sans-en);
+    font-size:20px;
+    letter-spacing: 0.1em;
+    padding: 8px 20px;
+    border-radius: 2px;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 15;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(40px, 6vh, 90px) 60px clamp(120px, 16vh, 170px);
+    text-align: center;
+  }
+
+  .hero-left {
+    max-width: 1680px;
+    width: 100%;
+  }
+
+  /* 今週のテーマ（単独KPI）— タイトル群のすぐ下に中央配置 */
+  .hero-theme {
+    margin-top: clamp(36px, 6vh, 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(8px, 1.2vw, 14px);
+  }
+
+  .hero-label {
+    font-family: var(--font-sans-en);
+    font-size: clamp(13px, 1.8vw, 26px);
+    letter-spacing: 0.3em;
+    color: rgba(255,255,255,0.95);
+    margin-bottom: clamp(18px, 3vw, 36px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    text-shadow: 0 1px 12px rgba(0,0,0,0.55), 0 0 2px rgba(0,0,0,0.4);
+  }
+
+  .hero-label::before {
+    content: '';
+    display: block;
+    width: clamp(28px, 5vw, 60px);
+    height: 1px;
+    background: currentColor;
+  }
+
+  .hero-label::after {
+    content: '';
+    display: block;
+    width: clamp(28px, 5vw, 60px);
+    height: 1px;
+    background: currentColor;
+  }
+
+  .hero-title {
+    font-family: var(--font-sans-en);
+    font-size: clamp(42px, 9.6vw, 172px);
+    font-weight: 900;
+    line-height: 1;
+    color: var(--white);
+    margin-bottom: clamp(14px, 2vw, 22px);
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+    text-shadow: 0 2px 24px rgba(0,0,0,0.45), 0 1px 4px rgba(0,0,0,0.35);
+  }
+
+  .hero-title .red { margin-left: 0.18em; }
+
+  .hero-title .red {
+    color: #fff;
+  }
+
+  /* D案：白抜き透明ボックス（サブタイトル） */
+  .hero-ko {
+    display: block;
+    width: clamp(320px, 64vw, 760px);
+    height: auto;
+    margin: clamp(18px, 2.6vw, 30px) auto 0;
+    filter: drop-shadow(0 2px 14px rgba(0,0,0,0.4));
+  }
+
+  .hero-subtitle {
+    font-family: var(--font-mincho);
+    font-size: clamp(18px, 3.2vw, 42px);
+    font-weight: 400;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: clamp(36px, 6vw, 80px);
+    letter-spacing: 0.02em;
+  }
+
+  .hero-kpi-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(20px, 4vw, 96px);
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-kpi {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(8px, 1.2vw, 14px);
+    flex: 1 1 240px;
+    min-width: 220px;
+    max-width: 480px;
+  }
+
+  .hero-kpi-label {
+    font-family: var(--font-sans-en);
+    font-size: clamp(15px, 1.8vw, 30px);
+    letter-spacing: 0.18em;
+    color: rgba(255,255,255,0.88);
+    text-transform: uppercase;
+    text-shadow: 0 1px 14px rgba(0,0,0,0.5);
+  }
+
+  .hero-kpi-value {
+    font-family: var(--font-mincho);
+    font-size: clamp(30px, 4.4vw, 84px);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.08;
+  }
+
+  .hero-kpi-value.positive { color: #4DFFAA; }
+  .hero-kpi-value.negative { color: var(--vn-red); }
+
+  .hero-kpi-sub {
+    font-family: var(--font-sans-en);
+    font-size: clamp(14px, 1.7vw, 28px);
+    color: rgba(255,255,255,0.88);
+    line-height: 1.5;
+    text-shadow: 0 1px 14px rgba(0,0,0,0.5);
+  }
+
+  .hero-divider {
+    width: 1px;
+    height: 110px;
+    background: rgba(255,255,255,0.18);
+    margin-top: 36px;
+  }
+
+  /* 狭い画面ではKPIを縦積みにし、装飾の縦線を隠す（見切れ防止） */
+  @media (max-width: 1024px) {
+    .hero-divider { display: none; }
+    .hero-kpi { flex-basis: 100%; max-width: 460px; }
+  }
+
+  /* ── SECTION COMMON ── */
+  section {
+    position: relative;
+  }
+
+  .section-inner {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 100px 80px;
+  }
+
+  .section-eyebrow {
+    font-family: var(--font-sans-en);
+    font-size:19px;
+    letter-spacing: 0.3em;
+    color: var(--cri-green);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-eyebrow::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: var(--vn-gold);
+  }
+
+  .section-title {
+    font-family: var(--font-mincho);
+    font-size:48px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--cri-green-dark);
+    margin-bottom: 12px;
+  }
+
+  .section-title-en {
+    font-family: var(--font-mincho);
+    font-size:22px;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-bottom: 52px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── SECTION 1: WEEKLY SUMMARY ── */
+  .summary-section {
+    background: var(--white);
+  }
+
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .narrative-block {
+    padding-right: 0;
+    padding-bottom: 40px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .narrative-lead {
+    font-size:26px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin-bottom: 24px;
+    border-left: 3px solid var(--vn-red);
+    padding-left: 20px;
+  }
+
+  .narrative-body {
+    font-size:22px;
+    line-height: 2;
+    color: var(--text-mid);
+  }
+
+  /* 長文本文は両端揃え（誌面の右端を揃えて読みやすく） */
+  .narrative-lead,
+  .narrative-body,
+  .news-body,
+  .catalyst-desc,
+  .column-body,
+  .column-highlight,
+  .risk-statement,
+  .footer-disclaimer,
+  .justify-body {
+    text-align: justify;
+  }
+
+  .stats-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 24px 26px;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--cri-green);
+    background: var(--cream);
+  }
+
+  .stats-panel .daily-chart {
+    grid-column: 1 / -1;
+  }
+
+  .stat-card.highlight {
+    background: var(--cri-green-dark);
+    border-color: var(--cri-green-dark);
+    border-left-color: var(--vn-gold);
+  }
+
+  .stat-label {
+    font-family: var(--font-sans-en);
+    font-size:20px;
+    letter-spacing: 0.1em;
+    color: var(--text-light);
+  }
+
+  .stat-card.highlight .stat-label {
+    color: rgba(255,255,255,0.5);
+  }
+
+  .stat-value {
+    font-family: var(--font-mincho);
+    font-size:34px;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+
+  .stat-card.highlight .stat-value {
+    color: var(--vn-gold);
+  }
+
+  .stat-value.pos { color: var(--up-color); }
+  .stat-value.neg { color: var(--down-color); }
+
+  /* Daily bars chart */
+  .daily-chart {
+    margin-top: 32px;
+  }
+
+  .daily-chart-title {
+    font-family: var(--font-sans-en);
+    font-size:19px;
+    letter-spacing: 0.2em;
+    color: var(--text-light);
+    margin-bottom: 16px;
+  }
+
+  .day-bars {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    height: 100px;
+  }
+
+  .day-bar-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    height: 100%;
+    justify-content: flex-end;
+  }
+
+  .day-bar-val {
+    font-family: var(--font-sans-en);
+    font-size:18px;
+    font-weight: 500;
+  }
+
+  .day-bar {
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+    transition: all 0.4s ease;
+    min-height: 4px;
+  }
+
+  .day-bar.pos { background: var(--up-color); }
+  .day-bar.neg { background: var(--down-color); }
+
+  .day-label {
+    font-family: var(--font-sans-en);
+    font-size:18px;
+    color: var(--text-light);
+    margin-top: 6px;
+    letter-spacing: 0.05em;
+  }
+
+  /* ── SECTOR SECTION ── */
+  .sector-section {
+    background: var(--cri-green-dark);
+    color: var(--white);
+  }
+
+  .sector-section .section-eyebrow { color: var(--vn-gold); }
+  .sector-section .section-title { color: var(--white); }
+  .sector-section .section-title-en { color: rgba(255,255,255,0.3); }
+
+  .sector-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+  }
+
+  .sector-card {
+    padding: 28px 24px;
+    background: rgba(255,255,255,0.04);
+    border-top: 2px solid transparent;
+    transition: background 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sector-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(245,196,0,0.04) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .sector-card:hover {
+    background: rgba(255,255,255,0.08);
+  }
+
+  .sector-card.top-performer {
+    border-top-color: var(--vn-gold);
+    background: rgba(245,196,0,0.06);
+  }
+
+  .sector-name {
+    font-family: var(--font-sans-en);
+    font-size:19px;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  .sector-return {
+    font-family: var(--font-mincho);
+    font-size:38px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .sector-return.pos { color: #4DFFAA; }
+  .sector-return.neg { color: #FF6B6B; }
+
+  .sector-bar-bg {
+    width: 100%;
+    height: 3px;
+    background: rgba(255,255,255,0.08);
+    margin-top: 16px;
+  }
+
+  .sector-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+  }
+
+  .sector-bar-fill.pos { background: #4DFFAA; }
+  .sector-bar-fill.neg { background: #FF6B6B; }
+
+  /* ── MOVERS SECTION ── */
+  .movers-section {
+    background: var(--cream);
+  }
+
+  .movers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+
+  .movers-col-title {
+    font-family: var(--font-sans-en);
+    font-size:20px;
+    letter-spacing: 0.2em;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .movers-col-title.gainers { color: var(--up-color); }
+  .movers-col-title.losers { color: var(--down-color); }
+
+  .mover-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+    background: var(--white);
+    margin-bottom: 8px;
+    border-left: 3px solid transparent;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+
+  .mover-card:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
+
+  .mover-card.gainer { border-left-color: var(--up-color); }
+  .mover-card.loser { border-left-color: var(--down-color); }
+
+  .mover-info { flex: 1; }
+
+  .mover-name-jp {
+    font-size:22px;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 3px;
+  }
+
+  .mover-ticker {
+    font-family: var(--font-sans-en);
+    font-size:19px;
+    color: var(--text-light);
+    letter-spacing: 0.1em;
+  }
+
+  .mover-sector-badge {
+    font-family: var(--font-sans-en);
+    font-size:18px;
+    background: var(--cream-dark);
+    color: var(--text-light);
+    padding: 2px 8px;
+    border-radius: 20px;
+    letter-spacing: 0.08em;
+    margin-left: 8px;
+  }
+
+  .mover-return {
+    font-family: var(--font-mincho);
+    font-size:30px;
+    font-weight: 700;
+  }
+
+  .mover-return.pos { color: var(--up-color); }
+  .mover-return.neg { color: var(--down-color); }
+
+  /* ── NEWS SECTION ── */
+  .news-section {
+    background: var(--cream);
+  }
+
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .news-card {
+    background: var(--white);
+    padding: 36px 32px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .news-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--cri-green), var(--vn-gold));
+  }
+
+  .news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,73,44,0.1);
+  }
+
+  .news-card.featured {
+    grid-row: span 1;
+  }
+
+  .news-tag {
+    font-family: var(--font-sans-en);
+    font-size:18px;
+    letter-spacing: 0.2em;
+    color: var(--cri-green);
+    background: rgba(0,73,44,0.06);
+    padding: 4px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+
+  .news-headline {
+    font-family: var(--font-mincho);
+    font-size:26px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text-dark);
+    margin-bottom: 14px;
+  }
+
+  .news-card.featured .news-headline {
+    font-size:32px;
+  }
+
+  .news-body {
+    font-size:21px;
+    line-height: 1.9;
+    color: var(--text-mid);
+  }
+
+  /* ── CATALYST SECTION ── */
+  .catalyst-section {
+    background: var(--white);
+  }
+
+  .catalyst-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-left: 2px solid var(--border);
+    padding-left: 40px;
+    margin-left: 20px;
+  }
+
+  .catalyst-item {
+    position: relative;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 120px 1fr auto;
+    gap: 32px;
+    align-items: start;
+  }
+
+  .catalyst-item::before {
+    content: '';
+    position: absolute;
+    left: -49px;
+    top: 32px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--vn-gold);
+    border: 2px solid var(--white);
+    box-shadow: 0 0 0 2px var(--cri-green);
+  }
+
+  .catalyst-date {
+    font-family: var(--font-sans-en);
+    font-size:20px;
+    color: var(--cri-green);
+    letter-spacing: 0.05em;
+    padding-top: 2px;
+  }
+
+  .catalyst-title {
+    font-size:23px;
+    font-weight: 500;
+    color: var(--text-dark);
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+
+  .catalyst-desc {
+    font-size:21px;
+    color: var(--text-mid);
+    line-height: 1.7;
+  }
+
+  .catalyst-impact {
+    font-family: var(--font-sans-en);
+    font-size:18px;
+    letter-spacing: 0.1em;
+    padding: 4px 10px;
+    border-radius: 2px;
+    white-space: nowrap;
+    margin-top: 4px;
+  }
+
+  .catalyst-impact.high {
+    background: rgba(218,37,29,0.1);
+    color: var(--vn-red);
+  }
+
+  .catalyst-impact.mid {
+    background: rgba(245,196,0,0.15);
+    color: #9A7C00;
+  }
+
+  .catalyst-impact.low {
+    background: rgba(0,73,44,0.08);
+    color: var(--cri-green);
+  }
+
+  /* ── RISK SECTION ── */
+  .risk-section {
+    background: var(--cri-green);
+    padding: 60px 80px;
+  }
+
+  .risk-inner {
+    max-width: 1680px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 48px;
+  }
+
+  .risk-label {
+    font-family: var(--font-sans-en);
+    font-size:19px;
+    letter-spacing: 0.3em;
+    color: rgba(255,255,255,0.45);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .risk-statement {
+    font-family: var(--font-mincho);
+    font-size:30px;
+    color: var(--white);
+    line-height: 1.6;
+    max-width: none;
+  }
+
+  .risk-stat-group {
+    display: flex;
+    justify-content: space-around;
+    gap: 48px;
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  .risk-stat {
+    text-align: center;
+  }
+
+  .risk-stat-val {
+    font-family: var(--font-mincho);
+    font-size:42px;
+    font-weight: 700;
+    color: var(--vn-gold);
+    display: block;
+  }
+
+  .risk-stat-label {
+    font-family: var(--font-sans-en);
+    font-size:18px;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.4);
+    display: block;
+    margin-top: 4px;
+    text-transform: uppercase;
+  }
+
+  /* ── COLUMN SECTION ── */
+  .column-section {
+    background: var(--cri-green-dark);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .column-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 90% 50%, rgba(245,196,0,0.06) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 60% at 10% 20%, rgba(218,37,29,0.08) 0%, transparent 50%);
+  }
+
+  .column-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 100px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .column-left .section-eyebrow { color: var(--vn-gold); }
+  .column-left .section-title { color: var(--white); font-size:58px; }
+
+  .column-em {
+    font-family: var(--font-mincho);
+    font-size:96px;
+    font-weight: 900;
+    color: var(--vn-gold);
+    line-height: 1.05;
+    margin-bottom: 18px;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+  }
+
+  .column-subtitle {
+    font-family: var(--font-sans-en);
+    font-size:20px;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.35);
+    margin-bottom: 40px;
+  }
+
+  .column-body {
+    font-size:23px;
+    line-height: 2;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 24px;
+  }
+
+  .column-highlight {
+    padding: 24px 28px;
+    border-left: 3px solid var(--vn-gold);
+    background: rgba(245,196,0,0.06);
+    font-size:22px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.85);
+    }
+
+  .column-right-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .fact-card {
+    padding: 24px 28px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(245,196,0,0.15);
+    position: relative;
+  }
+
+  .fact-number {
+    font-family: var(--font-mincho);
+    font-size:48px;
+    font-weight: 700;
+    color: var(--vn-gold);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .fact-label {
+    font-size:21px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.5;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--cri-green-dark);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 48px 80px;
+  }
+
+  .footer-inner {
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .footer-brand {
+    margin-bottom: 12px;
+  }
+
+  .footer-brand img {
+    height: 52px;
+    width: auto;
+    display: block;
+  }
+
+  .footer-dept {
+    font-family: var(--font-sans-en);
+    font-size:19px;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 16px;
+  }
+
+  .footer-disclaimer {
+    font-size:19px;
+    color: rgba(255,255,255,0.25);
+    line-height: 1.8;
+    max-width: 1360px;
+    margin: 28px auto 0;
+  }
+
+  .footer-meta {
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .footer-issue {
+    font-family: var(--font-sans-en);
+    font-size:20px;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 4px;
+  }
+
+  .footer-date {
+    font-family: var(--font-mincho);
+    font-size:32px;
+    color: var(--vn-gold);
+  }
+
+  /* ── SCROLL REVEAL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
+  /* ── NUMBER COUNTER ── */
+  .count-up {
+    display: inline-block;
+  }
+
+  /* ── CALENDAR SECTION ── */
+  .calendar-section { background: var(--cream); }
+  .cal-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 16px; }
+  .cal-col-header { font-family: var(--font-sans-en); font-size:20px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; padding: 12px 20px; margin-bottom: 24px; border-radius: 2px; }
+  .cal-col-header.vn { background: var(--cri-green-dark); color: var(--vn-gold); }
+  .cal-col-header.gl { background: var(--text-mid); color: var(--white); }
+  .cal-group { margin-bottom: 28px; }
+  .cal-group-label { font-family: var(--font-sans-en); font-size:18px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-light); margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  .cal-item { display: flex; align-items: flex-start; gap: 12px; padding: 10px 14px; margin-bottom: 4px; background: var(--white); border-left: 3px solid transparent; font-size:20px; line-height: 1.7; transition: background 0.2s; }
+  .cal-item:hover { background: var(--cream-dark); }
+  .cal-item.done { opacity: 0.42; border-left-color: var(--text-light); }
+  .cal-item.high { border-left-color: var(--vn-red); }
+  .cal-item.mid { border-left-color: var(--vn-gold); }
+  .cal-item.watch { border-left-color: var(--text-light); }
+  .cal-date { font-family: var(--font-sans-en); font-size:18px; color: var(--text-light); white-space: nowrap; width: 80px; flex-shrink: 0; padding-top: 2px; }
+  .cal-body { flex: 1; color: var(--text-dark); }
+  .cal-note { display: block; font-size:18px; color: var(--text-light); line-height: 1.6; }
+  .cal-badge { font-family: var(--font-sans-en); font-size:17px; padding: 2px 8px; border-radius: 2px; white-space: nowrap; flex-shrink: 0; align-self: flex-start; margin-top: 2px; }
+  .done-badge { background: var(--cream-dark); color: var(--text-light); }
+  .high-badge { background: rgba(218,37,29,0.10); color: var(--vn-red); }
+  .mid-badge { background: rgba(245,196,0,0.15); color: #8a6d00; }
+  .watch-badge { background: var(--cream-dark); color: var(--text-mid); }
+
+  /* spotlight 2カラム（モバイルで1カラムに落とすためクラス化） */
+  .spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 40px;
+  }
+
+  /* ───────── モバイル最適化（スマホ） ───────── */
+  @media (max-width: 768px) {
+    /* セクション余白・見出し */
+    .section-inner { padding: 56px 20px; }
+    .section-title { font-size: 30px; }
+    .section-title-en { font-size: 16px; margin-bottom: 32px; }
+    .section-eyebrow { font-size: 14px; letter-spacing: 0.2em; }
+
+    /* ヒーロー上部（ロゴ＋日付バッジ） */
+    .hero-nav { flex-wrap: wrap; gap: 12px; padding: 20px; }
+    .hero-logo-img { height: 38px; }
+    .logo-text { font-size: 13px; padding-left: 12px; line-height: 1.4; }
+    .hero-date-badge { font-size: 13px; padding: 6px 12px; }
+
+    /* ヒーロー本文 */
+    .hero-content { padding-left: 20px; padding-right: 20px; padding-bottom: clamp(80px, 14vh, 110px); }
+    .hero-label { font-size: 12px; letter-spacing: 0.2em; }
+    .hero-title { font-size: clamp(30px, 9vw, 56px); }
+    .hero-ko { width: min(92vw, 520px); }
+    .hero-kpi-label { font-size: 14px; }
+    .hero-kpi-sub { font-size: 14px; }
+    .hero-arrow { display: none; }
+
+    /* グリッドを縦に */
+    .stats-panel { grid-template-columns: 1fr; }
+    .movers-grid { grid-template-columns: 1fr; gap: 28px; }
+    .spotlight-grid { grid-template-columns: 1fr; gap: 28px; }
+    .column-inner { grid-template-columns: 1fr; gap: 36px; padding: 56px 20px; }
+    .cal-columns { grid-template-columns: 1fr; gap: 24px; }
+    .sector-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .sector-card div[style*="nowrap"] { white-space: normal !important; }
+
+    /* カタリスト：タイムライン装飾をやめ縦積み */
+    .catalyst-list { border-left: none; padding-left: 0; margin-left: 0; }
+    .catalyst-item { grid-template-columns: 1fr; gap: 6px; }
+    .catalyst-item::before { display: none; }
+
+    /* リスク */
+    .risk-section { padding: 48px 20px; }
+    .risk-statement { font-size: 21px; }
+    .risk-stat-group { flex-direction: column; gap: 18px; }
+
+    /* フッター */
+    .footer { padding: 40px 20px; }
+    .footer-inner { flex-direction: column; gap: 24px; }
+    .footer-meta { text-align: left; }
+    .footer-disclaimer { font-size: 15px; margin-top: 20px; }
+
+    /* 本文・見出しフォント */
+    .narrative-lead { font-size: 19px; }
+    .narrative-body { font-size: 17px; }
+    .news-body { font-size: 16px; }
+    .news-headline { font-size: 21px; }
+    .news-card.featured .news-headline { font-size: 21px !important; }
+    .column-em { font-size: 38px; white-space: normal; }
+    .column-subtitle { font-size: 16px; }
+    .column-body { font-size: 17px; }
+    .column-highlight { font-size: 17px; }
+    .fact-number { font-size: 38px; }
+    .mover-name-jp { font-size: 17px; }
+  }
+
+  @media (max-width: 420px) {
+    .hero-title { font-size: 28px; }
+    .hero-ko { width: 94vw; }
+    .section-title { font-size: 26px; }
+    .sector-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<div class="hero">
+  <video class="hero-video" id="heroVideo" autoplay muted loop playsinline></video>
+  <div id="heroSlideshow"></div>
+  <div class="hero-bg-pattern"></div>
+
+  <div class="hero-arrow hero-arrow-left" id="arrowLeft">&#8592;</div>
+  <div class="hero-arrow hero-arrow-right" id="arrowRight">&#8594;</div>
+
+  <div class="hero-dots" id="heroDots"></div>
+  <div class="hero-counter" id="heroCounter"></div>
+
+  <div class="hero-diagonal"></div>
+
+  <nav class="hero-nav">
+    <a class="hero-logo" href="https://yumiba924-a11y.github.io/CQCHP/" target="_blank" rel="noopener" title="Capital Quest Corporation, Ltd. 公式サイトへ" style="text-decoration:none;cursor:pointer">
+      <img src="./assets/cqc_logo.png" alt="CQC — Capital Quest Corporation" class="hero-logo-img">
+      <div class="logo-text">Capital Quest Corporation<br>投資調査部</div>
+    </a>
+    <div class="hero-date-badge">VOL.2026 — 6/1〜6/5</div>
+  </nav>
+
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-label">WEEKLY INTELLIGENCE REPORT</div>
+      <div class="hero-title">
+        Philippines <span class="red">Weekly</span>
+      </div>
+      <svg class="hero-ko" viewBox="0 0 760 96" role="img" aria-label="フィリピン株式市場 週次レポート">
+        <defs>
+          <mask id="hero-ko-mask">
+            <rect x="0" y="0" width="760" height="96" rx="2" fill="#fff"/>
+            <text x="380" y="64" text-anchor="middle" font-family="Hiragino Sans,Hiragino Kaku Gothic ProN,Yu Gothic,Meiryo,sans-serif" font-size="42" font-weight="700" letter-spacing="4" fill="#000">フィリピン株式市場 週次レポート</text>
+          </mask>
+        </defs>
+        <rect x="0" y="0" width="760" height="96" rx="2" fill="rgba(255,255,255,0.88)" mask="url(#hero-ko-mask)"/>
+      </svg>
+    </div>
+
+    <div class="hero-theme">
+      <div class="hero-kpi-label">今号のテーマ</div>
+      <div class="hero-kpi-value positive" style="font-size:clamp(28px,3.8vw,62px);white-space:nowrap">一服のリバウンド、続く利上げ</div>
+      <div class="hero-kpi-sub">原油$100割れ・5月CPI 6.8%鈍化で+1.54%反発。先週最弱のICTが+13.62%で逆転主導、だが6/18会合は利上げ観測</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══ SECTION 1: WEEKLY SUMMARY ═══ -->
+<section class="summary-section">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Market Summary</div>
+    <div class="section-title reveal">先週の相場概況</div>
+    <div class="section-title-en reveal">Weekly Market Overview</div>
+
+    <div class="summary-grid">
+      <div class="narrative-block reveal">
+        <div class="narrative-lead">
+          PSEi（フィリピン総合指数）は週次<strong>+1.54%</strong>と反発し、6/5（金）に終値<strong>5,938.38pt</strong>で引けた。前週の−3.51%（6,000割れ）から下げ止まり、週半ばには水曜ザラ場で6,037pt、金曜も6,000ptまで戻す場面があったが、<strong>引けでは6,000の節目を回復できず</strong>5,900台で着地。火曜+1.95%を中心に切り返し、出来高は金曜にかけて増加した。
+        </div>
+        <div class="narrative-body">
+          反発の主因は<strong>「供給ショックの一服」</strong>。中東情勢で停戦期待が浮上し<strong>ブレント原油が$100割れに反落</strong>、6/5発表の<strong>5月CPIも+6.8%（4月+7.2%から鈍化）</strong>とコンセンサスを下回り、インフレ・利上げ一辺倒だった地合いがいったん緩んだ。物色は典型的な<strong>ミーンリバージョン（行って来い）</strong>——先週最大下落の一角だった<strong>ICTが+13.62%で全市場首位</strong>、かつ時価総額最大ゆえ指数を牽引、外食のJollibeeも−7.03%→<strong>+7.41%</strong>と反転した。逆に先週上位だった<strong>SMC（+5.19%→−4.44%）・JGS（+5.10%→−4.66%）は反落</strong>。一方で<strong>不動産（−1.63%）は唯一明確なマイナス</strong>で戻りが鈍く、ペソも61ペソ台後半で最弱圏のまま。CPIはなお目標（2〜4%）の倍で米・とうもろこしは加速、6/18のBSP会合は利上げ観測が続いており、反発は「安心」ではなく「一服」と捉えるのが妥当な局面。
+        </div>
+      </div>
+
+      <div class="stats-panel">
+        <div class="stat-card highlight reveal">
+          <div>
+            <div class="stat-label">PSEi 週間騰落率</div>
+          </div>
+          <div class="stat-value pos">+1.54%</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat-label">資本財・サービス（指数牽引）</div>
+          <div class="stat-value pos">+5.81%</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <div class="stat-label">不動産（最弱）</div>
+          <div class="stat-value neg">−1.63%</div>
+        </div>
+
+        <div class="daily-chart reveal reveal-delay-3">
+          <div class="daily-chart-title">DAY-BY-DAY PERFORMANCE (6/1–6/5)</div>
+          <div class="day-bars">
+            <div class="day-bar-wrap reveal">
+              <div class="day-bar-val">−0.84%</div>
+              <div class="day-bar-bg"><div class="day-bar neg" style="height:43%"></div></div>
+              <div class="day-label">月</div>
+            </div>
+            <div class="day-bar-wrap reveal">
+              <div class="day-bar-val">+1.95%</div>
+              <div class="day-bar-bg"><div class="day-bar pos" style="height:100%"></div></div>
+              <div class="day-label">火</div>
+            </div>
+            <div class="day-bar-wrap reveal">
+              <div class="day-bar-val">+0.68%</div>
+              <div class="day-bar-bg"><div class="day-bar pos" style="height:35%"></div></div>
+              <div class="day-label">水</div>
+            </div>
+            <div class="day-bar-wrap reveal">
+              <div class="day-bar-val">−0.69%</div>
+              <div class="day-bar-bg"><div class="day-bar neg" style="height:35%"></div></div>
+              <div class="day-label">木</div>
+            </div>
+            <div class="day-bar-wrap reveal">
+              <div class="day-bar-val">+0.45%</div>
+              <div class="day-bar-bg"><div class="day-bar pos" style="height:23%"></div></div>
+              <div class="day-label">金</div>
+            </div>
+          </div>
+          <div style="font-size:12px;color:var(--text-light);margin-top:10px;line-height:1.6">※ 日次は .PSI 終値ベース（出所: LSEG, 6/1→6/5）。水曜ザラ場高値6,037.64pt・金曜高値6,000.24ptと6,000回復をうかがうも、終値ベースでは届かず。週内安値は6/1の5,799.32pt。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ SECTION 2: SECTORS ═══ -->
+<section class="sector-section">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Sector Performance</div>
+    <div class="section-title reveal">セクター騰落率</div>
+    <div class="section-title-en reveal">Weekly Sector Returns (PSEi 30)</div>
+
+    <div class="sector-grid">
+      <div class="sector-card top-performer reveal">
+        <div class="sector-name">資本財・サービス</div>
+        <div class="sector-return pos">+5.81%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">時価総額40%。ICT+13.62%で指数を牽引した実質的な主役</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill pos" style="width:99%"></div></div>
+      </div>
+      <div class="sector-card reveal reveal-delay-1">
+        <div class="sector-name">一般消費財</div>
+        <div class="sector-return pos">+5.85%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">数値は最大だが2銘柄。JFC+7.41%の反発が主因</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill pos" style="width:100%"></div></div>
+      </div>
+      <div class="sector-card reveal reveal-delay-2">
+        <div class="sector-name">金融</div>
+        <div class="sector-return pos">+2.73%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">BPI+3.71%/BDO+3.42%。利上げ局面で連続プラス</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill pos" style="width:47%"></div></div>
+      </div>
+      <div class="sector-card reveal reveal-delay-3">
+        <div class="sector-name">エネルギー</div>
+        <div class="sector-return pos">+1.92%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">SCC1銘柄のみ</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill pos" style="width:33%"></div></div>
+      </div>
+      <div class="sector-card reveal">
+        <div class="sector-name">公益事業</div>
+        <div class="sector-return pos">+0.09%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">AEV+5.66%/ACEN+4.55% vs Meralco−2.54%で相殺、ほぼ横ばい</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill pos" style="width:2%"></div></div>
+      </div>
+      <div class="sector-card reveal reveal-delay-1">
+        <div class="sector-name">生活必需品</div>
+        <div class="sector-return neg">−0.32%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">URC−3.39%等が重し、ほぼ横ばい</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill neg" style="width:5%"></div></div>
+      </div>
+      <div class="sector-card reveal reveal-delay-2">
+        <div class="sector-name">コミュニケーション</div>
+        <div class="sector-return neg">−1.13%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">Converge−4.55%が重し、通信軟調</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill neg" style="width:19%"></div></div>
+      </div>
+      <div class="sector-card reveal reveal-delay-3">
+        <div class="sector-name">不動産</div>
+        <div class="sector-return neg">−1.63%</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px;white-space:nowrap">最弱。RCR−4.05%/ALI−2.88%/SMPH−1.52%、戻り鈍い</div>
+        <div class="sector-bar-bg"><div class="sector-bar-fill neg" style="width:28%"></div></div>
+      </div>
+    </div>
+    <div style="font-size:13px;color:rgba(255,255,255,0.45);margin-top:20px;line-height:1.7">※ セクター騰落率は <strong>PSEi 構成30銘柄</strong>を LSEG GICS Sector分類で<strong>時価総額加重</strong>した週次トータルリターン（TR.TotalReturn1Wk＝前金曜終値→当金曜終値、配当込）。一般消費財(2銘柄)・エネルギー(1銘柄)など構成数の少ないセクターは個別株で振れやすい。GICS該当銘柄のないセクター（ヘルスケア・情報技術・素材）は非掲載。出所: LSEG PSI_Weekly 2026/06/05 構成銘柄シート。</div>
+  </div>
+</section>
+
+
+<!-- ═══ SECTION 3: MOVERS ═══ -->
+<section class="movers-section">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Individual Stocks</div>
+    <div class="section-title reveal">注目銘柄</div>
+    <div class="section-title-en reveal">Top Gainers &amp; Losers (PSEi 30)</div>
+
+    <div class="movers-grid">
+      <div>
+        <div class="movers-col-title gainers reveal">▲ TOP GAINERS <span style="font-size:13px;color:rgba(0,0,0,0.4);font-weight:400;letter-spacing:0.05em;margin-left:8px">週次TR: 前金曜→当金曜・配当込</span></div>
+        <div class="mover-card gainer reveal">
+          <div class="mover-info">
+            <div class="mover-name-jp">国際コンテナターミナル <span class="mover-sector-badge">資本財・サービス</span></div>
+            <div class="mover-ticker">ICT · 週次（先週−7.73%から逆転）</div>
+          </div>
+          <div class="mover-return pos">+13.62%</div>
+        </div>
+        <div class="mover-card gainer reveal reveal-delay-1">
+          <div class="mover-info">
+            <div class="mover-name-jp">ジョリビー・フーズ <span class="mover-sector-badge">一般消費財・サービス</span></div>
+            <div class="mover-ticker">JFC · 週次（先週−7.03%から反転）</div>
+          </div>
+          <div class="mover-return pos">+7.41%</div>
+        </div>
+        <div class="mover-card gainer reveal reveal-delay-2">
+          <div class="mover-info">
+            <div class="mover-name-jp">アボイティス・エクイティ <span class="mover-sector-badge">公益事業</span></div>
+            <div class="mover-ticker">AEV · 週次</div>
+          </div>
+          <div class="mover-return pos">+5.66%</div>
+        </div>
+        <div class="mover-card gainer reveal reveal-delay-3">
+          <div class="mover-info">
+            <div class="mover-name-jp">アヤラ系再エネ ACEN <span class="mover-sector-badge">公益事業</span></div>
+            <div class="mover-ticker">ACEN · 週次（2週連続プラス）</div>
+          </div>
+          <div class="mover-return pos">+4.55%</div>
+        </div>
+        <div class="mover-card gainer reveal reveal-delay-4">
+          <div class="mover-info">
+            <div class="mover-name-jp">フィリピン諸島銀行 <span class="mover-sector-badge">金融</span></div>
+            <div class="mover-ticker">BPI · 週次（2週連続プラス）</div>
+          </div>
+          <div class="mover-return pos">+3.71%</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="movers-col-title losers reveal">▼ TOP LOSERS <span style="font-size:13px;color:rgba(0,0,0,0.4);font-weight:400;letter-spacing:0.05em;margin-left:8px">週次TR: 前金曜→当金曜・配当込</span></div>
+        <div class="mover-card loser reveal">
+          <div class="mover-info">
+            <div class="mover-name-jp">アヤラ・コーポレーション <span class="mover-sector-badge">資本財・サービス</span></div>
+            <div class="mover-ticker">AC · 週次</div>
+          </div>
+          <div class="mover-return neg">−7.01%</div>
+        </div>
+        <div class="mover-card loser reveal reveal-delay-1">
+          <div class="mover-info">
+            <div class="mover-name-jp">JGサミット <span class="mover-sector-badge">資本財・サービス</span></div>
+            <div class="mover-ticker">JGS · 週次（先週+5.10%から反落）</div>
+          </div>
+          <div class="mover-return neg">−4.66%</div>
+        </div>
+        <div class="mover-card loser reveal reveal-delay-2">
+          <div class="mover-info">
+            <div class="mover-name-jp">コンバージ（光通信） <span class="mover-sector-badge">コミュニケーション・サービス</span></div>
+            <div class="mover-ticker">CNVRG · 週次</div>
+          </div>
+          <div class="mover-return neg">−4.55%</div>
+        </div>
+        <div class="mover-card loser reveal reveal-delay-3">
+          <div class="mover-info">
+            <div class="mover-name-jp">サンミゲル <span class="mover-sector-badge">資本財・サービス</span></div>
+            <div class="mover-ticker">SMC · 週次（先週+5.19%から反落）</div>
+          </div>
+          <div class="mover-return neg">−4.44%</div>
+        </div>
+        <div class="mover-card loser reveal reveal-delay-4">
+          <div class="mover-info">
+            <div class="mover-name-jp">RLコマーシャルREIT <span class="mover-sector-badge">不動産</span></div>
+            <div class="mover-ticker">RCR · 週次</div>
+          </div>
+          <div class="mover-return neg">−4.05%</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:48px;padding:32px 40px;background:white;border-left:4px solid var(--vn-gold);grid-column:1 / -1" class="reveal reveal-delay-3">
+      <div style="font-family:var(--font-sans-en);font-size:15px;letter-spacing:0.15em;color:var(--text-light);margin-bottom:12px">ANALYST NOTE</div>
+      <div class="justify-body" style="font-size:18px;line-height:1.9;color:var(--text-mid)">
+        先週との顔ぶれの<strong>「逆転」</strong>がこの週の本質。値上がり上位は<strong>先週の最弱組</strong>がそのまま並び、最大上昇の<strong>ICT +13.62%</strong>（先週−7.73%）は時価総額最大ゆえ単独で資本財セクター（+5.81%）と指数全体を押し上げた。外食の<strong>Jollibee +7.41%</strong>（先週−7.03%）も典型的な行って来い。一方、値下がりは<strong>先週の上位組</strong>が反落——<strong>SMC（先週+5.19%→−4.44%）・JGS（+5.10%→−4.66%）</strong>と、わずか1週で立場が入れ替わった。最大下落のAC −7.01%（アヤラ本体）、通信のCNVRG −4.55% も重し。<strong>不動産は−1.63%で唯一の明確なマイナス</strong>、金利上昇に弱いREIT（RCR −4.05%）の戻りが鈍い。物色はファンダではなくミーンリバージョンが主導した一週で、トレンド転換とは言いにくい。
+      </div>
+      <div style="font-size:13px;line-height:1.7;color:var(--text-light);margin-top:16px;padding-top:14px;border-top:1px dashed rgba(0,0,0,0.1)">
+        ※ 個別銘柄・セクターのリターンは LSEG TR.TotalReturn1Wk（前金曜終値→当金曜終値、配当込・時価総額加重）。PSEi 週次（+1.54%）・日次は A基準（6/1 月始→6/5 金終、.PSI 終値ベース）。対象は PSEi 構成30銘柄。出所: LSEG PSI_Weekly 2026/06/05。Web（tradingeconomics, Manila Times, ING, BusinessWorld）で水準・材料を再検証済。
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ SECTION 3.5: STOCK SPOTLIGHT ═══ -->
+<section class="spotlight-section" style="background:var(--cream);padding:80px 0;margin:0">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Deep Dive</div>
+    <div class="section-title reveal">注目銘柄スポットライト</div>
+    <div class="section-title-en reveal">Stock Spotlight Analysis</div>
+
+    <div class="spotlight-grid">
+      <!-- Stock 1: ICT (rebound engine) -->
+      <div class="reveal">
+        <div style="background:white;border-left:4px solid var(--up-color);padding:32px;margin-bottom:24px">
+          <div class="justify-body" style="font-family:var(--font-sans-en);font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:8px">国際コンテナターミナル<br>(International Container Terminal Services)</div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px">
+            <div>
+              <div style="font-size:26px;font-weight:700;color:var(--text-dark)">ICT</div>
+              <div style="font-size:16px;color:var(--text-light)">PSE</div>
+            </div>
+            <div style="background:var(--up-color);color:white;padding:6px 12px;border-radius:4px;font-size:17px;font-weight:600">+13.62%</div>
+          </div>
+
+          <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border)">
+            <div style="font-size:16px;color:var(--text-light);margin-bottom:8px">資本財・サービス（港湾運営）</div>
+            <div class="justify-body" style="font-size:18px;line-height:1.8;color:var(--text-mid)">ラソン系の世界的なコンテナ港湾運営大手。<strong>時価総額約1.73兆ペソとPSEi最大</strong>のため、その値動きが指数全体を左右する。先週は<strong>−7.73%で下落の一角</strong>だったが、先週は<strong>+13.62%で全市場首位</strong>に逆転。この1銘柄の急騰が資本財セクター（+5.81%）を押し上げ、PSEi反発の最大の原動力となった。1ヵ月でも+14.46%。</div>
+          </div>
+
+          <div style="margin-bottom:24px">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+              <div>
+                <div style="font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">時価総額</div>
+                <div style="font-family:var(--font-sans-en);font-size:21px;font-weight:700;color:var(--text-dark)">約1.73兆ペソ</div>
+              </div>
+              <div>
+                <div style="font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">週次リターン (TR)</div>
+                <div style="font-family:var(--font-sans-en);font-size:21px;font-weight:700;color:var(--up-color)">+13.62%</div>
+              </div>
+              <div>
+                <div style="font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">前週リターン</div>
+                <div style="font-family:var(--font-sans-en);font-size:21px;font-weight:700;color:var(--down-color)">−7.73%</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:var(--vn-gold-light);padding:16px;border-radius:4px;margin-top:16px">
+            <div style="font-family:var(--font-sans-en);font-size:15px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:8px">WHY NOW?</div>
+            <div class="justify-body" style="font-size:16px;line-height:1.7;color:var(--text-dark)">売られ過ぎの反動に加え、原油反落で「世界貿易・物流」への過度な悲観が後退。指数最大ウェイト銘柄が動くと指数全体が振れるため、ICTの逆襲はそのまま市場の反発に直結した。ただし要因の多くはミーンリバージョンで、ファンダの変化とは切り分けて見たい。</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stock 2: BPI (tightening winner, continuity) -->
+      <div class="reveal" style="animation-delay:0.2s">
+        <div style="background:white;border-left:4px solid var(--up-color);padding:32px;margin-bottom:24px">
+          <div class="justify-body" style="font-family:var(--font-sans-en);font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:8px">フィリピン諸島銀行<br>(Bank of the Philippine Islands)</div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px">
+            <div>
+              <div style="font-size:26px;font-weight:700;color:var(--text-dark)">BPI</div>
+              <div style="font-size:16px;color:var(--text-light)">PSE</div>
+            </div>
+            <div style="background:var(--up-color);color:white;padding:6px 12px;border-radius:4px;font-size:17px;font-weight:600">+3.71%</div>
+          </div>
+
+          <div style="margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border)">
+            <div style="font-size:16px;color:var(--text-light);margin-bottom:8px">金融（大手商業銀行）</div>
+            <div class="justify-body" style="font-size:18px;line-height:1.8;color:var(--text-mid)">アヤラ財閥系の大手銀行。先週の+6.28%に続き<strong>+3.71%と2週連続プラス</strong>、金融セクター（+2.73%）の連続上昇を支えた。リバウンド相場でも<strong>「利上げの構造的受益者」</strong>として買われ続けている点が、今週のミーンリバージョン主導の他の値上がりとは性格が異なる。6/18会合でも利上げ観測が続くなか、NIM（利ざや）拡大期待が下支え。1ヵ月で+9.54%。</div>
+          </div>
+
+          <div style="margin-bottom:24px">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+              <div>
+                <div style="font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">時価総額</div>
+                <div style="font-family:var(--font-sans-en);font-size:21px;font-weight:700;color:var(--text-dark)">約5,018億ペソ</div>
+              </div>
+              <div>
+                <div style="font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">週次リターン (TR)</div>
+                <div style="font-family:var(--font-sans-en);font-size:21px;font-weight:700;color:var(--up-color)">+3.71%</div>
+              </div>
+              <div>
+                <div style="font-size:16px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px">1ヵ月リターン</div>
+                <div style="font-family:var(--font-sans-en);font-size:21px;font-weight:700;color:var(--up-color)">+9.54%</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:var(--vn-gold-light);padding:16px;border-radius:4px;margin-top:16px">
+            <div style="font-family:var(--font-sans-en);font-size:15px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:8px">WHY NOW?</div>
+            <div class="justify-body" style="font-size:16px;line-height:1.7;color:var(--text-dark)">反発局面でも金融が崩れないのは、利上げが続く限りNIM拡大という追い風が残るため。「行って来い」で戻った他の銘柄と違い、BPIはテーマではなく金利環境に支えられる。ただし利上げが景気を冷やせば与信コスト増の懸念は残る。</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SECTION 5: NEWS ═══ -->
+<section class="news-section">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">News &amp; Topics</div>
+    <div class="section-title reveal">ニューストピックス</div>
+    <div class="section-title-en reveal">Weekly Market Intelligence</div>
+
+    <div class="news-grid">
+      <div class="news-card featured reveal">
+        <div class="news-tag">POLICY ／ 政策・制度</div>
+        <div class="news-headline" style="font-size:28px">5月CPIは6.8%に鈍化、それでも6/18 BSP会合は利上げ観測 — 25〜50bp、年末5.25%予想も</div>
+        <div class="news-body">
+          5月CPIが+6.8%（4月+7.2%）とコンセンサスを下回ったにもかかわらず、市場は<strong>6/18のBSP会合で追加利上げを織り込む</strong>。鈍化の主因は輸送インフレの反落（21.4%→16.2%）で、<strong>食品・サービスはなお高止まり</strong>。アナリストは<strong>25bp利上げを濃厚</strong>とみており、停戦に明確な進展がなければ<strong>50bpの可能性</strong>も指摘。MUFGは年末までに政策金利<strong>5.25%（+75bp）</strong>を見込む。OECDも「aggressive BSP」と評し、BSPは3%目標への回帰を目指す。供給インフレ＋景気減速の<strong>スタグフレーション・リスク</strong>を睨み、金融政策と財政の協調・データ依存の姿勢が続く。
+        </div>
+      </div>
+      <div class="news-card reveal reveal-delay-1">
+        <div class="news-tag">MACRO ／ マクロ・外資</div>
+        <div class="news-headline">原油ブレントが$100割れに反落 — 中東停戦期待が供給ショックを一服させ、株反発の主因に</div>
+        <div class="news-body">
+          反発の最大の外部要因は<strong>原油の反落</strong>。米・イラン交渉の継続と停戦期待で<strong>ブレント原油が$100/バレルを割り込み</strong>、石油輸入国フィリピンの供給インフレ圧力がいったん和らいだ。これが5月CPIの鈍化（6.8%）と相まって市場心理を改善させた。ただし停戦は<strong>「脆弱で、いつ逆流してもおかしくない」</strong>状況。<strong>5月CPIの内訳</strong>は輸送16.2%・食品5.8%へ減速した一方、<strong>米は15.6%（13.7%から）、とうもろこしは25.5%（21.0%から）と加速</strong>、主食の高止まりは続く。為替のペソは<strong>61ペソ台後半（週内61.4〜61.8）</strong>と年内最弱圏のままで、原油反落でも通貨はまだ戻っていない。
+        </div>
+      </div>
+      <div class="news-card reveal reveal-delay-2">
+        <div class="news-tag">FLOW ／ 個別・セクター</div>
+        <div class="news-headline">物色は「行って来い」 — 先週最弱のICT/Jollibeeが逆転主導、上位だったSMC/JGSは反落</div>
+        <div class="news-body">
+          先週と顔ぶれが<strong>そっくり入れ替わった</strong>のが今週の特徴。最大上昇の<strong>ICT +13.62%</strong>（先週−7.73%）と<strong>Jollibee +7.41%</strong>（先週−7.03%）は典型的なミーンリバージョン。ICTは時価総額最大ゆえ、その逆襲が資本財セクター（+5.81%）と指数全体を牽引した。逆に先週の値上がり上位だった<strong>SMC（+5.19%→−4.44%）・JGS（+5.10%→−4.66%）が反落</strong>。一方、金融はBPI +3.71%・BDO +3.42% と2週連続でプラスを確保し、利上げ局面の構造的買いが継続。<strong>不動産（−1.63%）だけが明確なマイナス</strong>で、金利上昇に弱いREIT（RCR −4.05%）の戻りが鈍かった。反発は需給・逆張りが主導で、ファンダの転換を伴うものではない。
+        </div>
+      </div>
+    </div>
+    <div style="font-size:13px;color:var(--text-light);margin-top:20px;line-height:1.7">※ 出所: <strong>フィリピン統計局PSA（5月CPI +6.8%、輸送16.2%・食品5.8%、米15.6%・とうもろこし25.5%、1-5月平均4.5%、6/5発表）</strong>、ING／BusinessWorld／Manila Bulletin（6/18 BSP利上げ観測 25-50bp、MUFG年末5.25%、OECD評）、Manila Times（PSEi 5,800ブレイク・5,800-6,000レンジ）、tradingeconomics／Wise／exchangerates.org.uk（ブレント$100割れ、USD/PHP 61ペソ台後半・週内61.4〜61.8）。個別・セクターのリターンは LSEG PSI_Weekly 2026/06/05 構成銘柄シートから時価総額加重で算出。</div>
+  </div>
+</section>
+
+
+<!-- ═══ SECTION 6: CATALYST ═══ -->
+<section class="catalyst-section">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Looking Ahead</div>
+    <div class="section-title reveal">今週のカタリスト</div>
+    <div class="section-title-en reveal">Key Events to Watch</div>
+
+    <div class="catalyst-list">
+      <div class="catalyst-item reveal">
+        <div class="catalyst-date">6/8-12</div>
+        <div>
+          <div class="catalyst-title">6,000の壁 / 5,800サポートの攻防</div>
+          <div class="catalyst-desc">終値で6,000を回復できるかが反発持続の試金石。5,800を割れると次の下値メド5,600へ。レンジは5,800〜6,000</div>
+        </div>
+        <div class="catalyst-impact mid">MID IMPACT</div>
+      </div>
+      <div class="catalyst-item reveal reveal-delay-1">
+        <div class="catalyst-date">随時</div>
+        <div>
+          <div class="catalyst-title">中東停戦・原油（ブレント）の行方</div>
+          <div class="catalyst-desc">$100割れの定着なら反発継続を後押し。停戦は脆弱で、逆流すれば供給インフレ再燃・株安リスク</div>
+        </div>
+        <div class="catalyst-impact high">HIGH IMPACT</div>
+      </div>
+      <div class="catalyst-item reveal reveal-delay-2">
+        <div class="catalyst-date">6/12</div>
+        <div>
+          <div class="catalyst-title">独立記念日（市場休場）</div>
+          <div class="catalyst-desc">フィリピン株式市場は休場。週内の流動性低下に留意</div>
+        </div>
+        <div class="catalyst-impact low">LOW IMPACT</div>
+      </div>
+    </div>
+
+    <div class="section-title reveal" style="margin-top:40px;font-size:1.6rem">今後のカタリスト</div>
+    <div class="catalyst-list">
+      <div class="catalyst-item reveal">
+        <div class="catalyst-date">6/18</div>
+        <div>
+          <div class="catalyst-title">BSP 金融政策会合（Monetary Board）— 最大の焦点</div>
+          <div class="catalyst-desc">CPI鈍化でも利上げ観測（25bp濃厚、停戦進展なければ50bpも）。利上げ幅とガイダンスが反発の持続性を左右。MUFGは年末5.25%（+75bp）を予想</div>
+        </div>
+        <div class="catalyst-impact high">HIGH IMPACT</div>
+      </div>
+      <div class="catalyst-item reveal reveal-delay-1">
+        <div class="catalyst-date">通年</div>
+        <div>
+          <div class="catalyst-title">中東情勢・原油の構造リスク</div>
+          <div class="catalyst-desc">石油輸入国フィリピンのインフレ・経常・金融政策を左右する最大の外部変数。停戦の定着 or 逆流が分岐点</div>
+        </div>
+        <div class="catalyst-impact high">HIGH IMPACT</div>
+      </div>
+      <div class="catalyst-item reveal reveal-delay-2">
+        <div class="catalyst-date">7月初</div>
+        <div>
+          <div class="catalyst-title">6月CPI発表（PSA）</div>
+          <div class="catalyst-desc">6.8%からさらに鈍化が続くか、米・とうもろこし等の主食インフレが頭打ちになるかを確認</div>
+        </div>
+        <div class="catalyst-impact mid">MID IMPACT</div>
+      </div>
+      <div class="catalyst-item reveal reveal-delay-3">
+        <div class="catalyst-date">8月</div>
+        <div>
+          <div class="catalyst-title">Q2 GDP発表 ／ MSCI 半期見直し</div>
+          <div class="catalyst-desc">利上げ・インフレが内需に与える影響を確認。スタグフレーション懸念の現実度をGDPで点検</div>
+        </div>
+        <div class="catalyst-impact mid">MID IMPACT</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ RISK STRIP ═══ -->
+<div class="risk-section">
+  <div class="risk-inner">
+    <div>
+      <div class="risk-label">RISK MONITOR — SIMPLIFIED</div>
+      <div class="risk-statement">"原油反落（ブレント$100割れ）と5月CPIの6.8%鈍化で供給ショックが一服し、PSEiは+1.54%反発、終値ベースで6,000回復をうかがった。だが反発は先週最弱銘柄のミーンリバージョン主導（ICT+13.62%）で、CPIはなお6.8%（米・とうもろこしは加速）、ペソは61ペソ台後半で最弱圏のまま。6/18 BSP会合は利上げ観測（25〜50bp、年末5.25%予想も）が続き、スタグフレーション色は残る。反発は歓迎だが『一服』であり、トレンド転換と決めつけるには早い。"</div>
+    </div>
+    <div class="risk-stat-group">
+      <div class="risk-stat">
+        <span class="risk-stat-val">+1.54%</span>
+        <span class="risk-stat-label">週次騰落（反発）</span>
+      </div>
+      <div class="risk-stat">
+        <span class="risk-stat-val">5,938pt</span>
+        <span class="risk-stat-label">6,000の壁の手前</span>
+      </div>
+      <div class="risk-stat">
+        <span class="risk-stat-val">↗</span>
+        <span class="risk-stat-label">リスクトレンド（一服・利上げは継続）</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══ 2026 ANNUAL CALENDAR ═══ -->
+<section class="calendar-section">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">📅 2026 Key Events</div>
+    <h2 class="section-title reveal">2026年 フィリピン・グローバル イベントカレンダー</h2>
+    <p class="section-title-en reveal">Philippines &amp; World — Annual Event Timeline</p>
+
+    <div class="cal-columns">
+
+      <!-- ── フィリピン ── -->
+      <div class="cal-col">
+        <div class="cal-col-header vn">🇵🇭 フィリピン</div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">金融政策（BSP）</div>
+          <div class="cal-item done">
+            <span class="cal-date">4/23</span>
+            <span class="cal-body">BSP +25bp 利上げ → 4.50%<br><span class="cal-note">2年超ぶりの利上げに転換。中東発の供給ショックでインフレ見通しが急変</span></span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item high">
+            <span class="cal-date">6/18</span>
+            <span class="cal-body">BSP 金融政策会合<br><span class="cal-note">CPI鈍化でも利上げ観測（25bp濃厚、50bpも）。MUFGは年末5.25%予想</span></span>
+            <span class="cal-badge high-badge">HIGH</span>
+          </div>
+          <div class="cal-item watch">
+            <span class="cal-date">下期</span>
+            <span class="cal-body">BSP 定例会合（8月・10月・12月）<br><span class="cal-note">インフレ・原油次第で引き締め継続を注視</span></span>
+            <span class="cal-badge watch-badge">WATCH</span>
+          </div>
+        </div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">マクロ指標</div>
+          <div class="cal-item done">
+            <span class="cal-date">6/5</span>
+            <span class="cal-body">5月CPI +6.8%（4月7.2%から鈍化）<br><span class="cal-note">輸送16.2%・食品5.8%へ減速。ただし米15.6%・とうもろこし25.5%は加速</span></span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">7月初</span>
+            <span class="cal-body">6月CPI発表（PSA）<br><span class="cal-note">主食インフレが頭打ちになるか。BSPの次の判断材料</span></span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">8月／11月</span>
+            <span class="cal-body">Q2／Q3 GDP発表<br><span class="cal-note">利上げ・インフレが内需に与える影響。スタグフレーション懸念を点検</span></span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+        </div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">資本市場</div>
+          <div class="cal-item mid">
+            <span class="cal-date">8月／11月</span>
+            <span class="cal-body">MSCI 半期・四半期見直し<br><span class="cal-note">PSEi構成銘柄・新興国指数ウェイトの入替を注視</span></span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+          <div class="cal-item watch">
+            <span class="cal-date">2月／8月</span>
+            <span class="cal-body">PSEi 構成銘柄 半期リバランス<br><span class="cal-note">指数構成30銘柄の定期見直し</span></span>
+            <span class="cal-badge watch-badge">WATCH</span>
+          </div>
+        </div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">祝日・休場</div>
+          <div class="cal-item done">
+            <span class="cal-date">5/27</span>
+            <span class="cal-body">Eid'l Adha（犠牲祭・市場休場）</span>
+            <span class="cal-badge done-badge">済</span>
+          </div>
+          <div class="cal-item watch">
+            <span class="cal-date">6/12</span>
+            <span class="cal-body">独立記念日（市場休場）</span>
+            <span class="cal-badge watch-badge">WATCH</span>
+          </div>
+          <div class="cal-item watch">
+            <span class="cal-date">8/21</span>
+            <span class="cal-body">ニノイ・アキノ記念日（市場休場）</span>
+            <span class="cal-badge watch-badge">WATCH</span>
+          </div>
+          <div class="cal-item watch">
+            <span class="cal-date">8/31</span>
+            <span class="cal-body">英雄の日（市場休場）</span>
+            <span class="cal-badge watch-badge">WATCH</span>
+          </div>
+          <div class="cal-item watch">
+            <span class="cal-date">11/30・12/25・12/30</span>
+            <span class="cal-body">ボニファシオ／クリスマス／リサール記念日（休場）</span>
+            <span class="cal-badge watch-badge">WATCH</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── グローバル ── -->
+      <div class="cal-col">
+        <div class="cal-col-header gl">🌐 グローバル</div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">Q2（4〜6月）</div>
+          <div class="cal-item high">
+            <span class="cal-date">通年</span>
+            <span class="cal-body">中東情勢・原油（ブレント）<br><span class="cal-note">$100割れに反落も停戦は脆弱。石油輸入国フィリピンのインフレ最大の外部変数</span></span>
+            <span class="cal-badge high-badge">HIGH</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">6/15〜17</span>
+            <span class="cal-body">G7 首脳会議（フランス・エビアン）</span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">6月中</span>
+            <span class="cal-body">世界銀行／OECD 世界経済見通し</span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+        </div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">Q3（7〜9月）</div>
+          <div class="cal-item high">
+            <span class="cal-date">通年</span>
+            <span class="cal-body">FRB 利上げ／利下げペース<br><span class="cal-note">ドル・ペソ相場と外国人フローに直結</span></span>
+            <span class="cal-badge high-badge">HIGH</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">7月中</span>
+            <span class="cal-body">IMF 世界経済見通し（中間）</span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+          <div class="cal-item watch">
+            <span class="cal-date">9月中</span>
+            <span class="cal-body">第81回国連総会 一般討論（ニューヨーク）</span>
+            <span class="cal-badge watch-badge">WATCH</span>
+          </div>
+        </div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">Q4（10〜12月）</div>
+          <div class="cal-item high">
+            <span class="cal-date">10/12〜18</span>
+            <span class="cal-body">IMF・世界銀行 年次総会（タイ・バンコク）<br><span class="cal-note">ASEAN開催でアジア市場の注目度高い</span></span>
+            <span class="cal-badge high-badge">HIGH</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">11月中</span>
+            <span class="cal-body">APEC 閣僚・首脳会議<br><span class="cal-note">通商政策・サプライチェーンの観点で注視</span></span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">11月</span>
+            <span class="cal-body">米中間選挙（下院全議席改選）<br><span class="cal-note">通商政策の方向性に影響</span></span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+          <div class="cal-item mid">
+            <span class="cal-date">12月中</span>
+            <span class="cal-body">G20 サミット</span>
+            <span class="cal-badge mid-badge">MID</span>
+          </div>
+        </div>
+
+        <div class="cal-group">
+          <div class="cal-group-label">通年モニタリング</div>
+          <div class="cal-item high">
+            <span class="cal-date">通年</span>
+            <span class="cal-body">米ドル／フィリピンペソ相場<br><span class="cal-note">61ペソ台後半で年内最弱圏。原油反落でも通貨は戻らず、ペソ安は輸入インフレを増幅</span></span>
+            <span class="cal-badge high-badge">HIGH</span>
+          </div>
+          <div class="cal-item high">
+            <span class="cal-date">通年</span>
+            <span class="cal-body">海外労働者送金（OFW Remittance）<br><span class="cal-note">GDP・内需消費を支える構造的フロー</span></span>
+            <span class="cal-badge high-badge">HIGH</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.cal-columns -->
+    <div style="font-size:12px;color:var(--text-light);margin-top:20px;line-height:1.6">※ 祝日・会合日程は変更の可能性があります。移動祝日（イスラム祝日等）は最新を PSE・BSP の公式発表でご確認ください。</div>
+  </div>
+</section>
+<!-- ═══ END CALENDAR ═══ -->
+
+<!-- ═══ COLUMN: ひとくちメモ ═══ -->
+<section class="column-section">
+  <div class="column-bg"></div>
+  <div class="column-inner">
+    <div class="column-left">
+      <div class="section-eyebrow reveal">🇵🇭 Hitokuchi Memo</div>
+      <div class="column-em reveal">振り子は戻った</div>
+      <div class="column-subtitle reveal">THE BOUNCE — 一服のリバウンドと、残る重力</div>
+      <div class="column-body reveal">
+        先週このコラムは「供給インフレは重力のように効く」と書いた。先週はその重力がいったん緩んだ——中東で停戦期待が浮上して<strong style="color:var(--vn-gold)">原油が$100を割り、5月CPIも6.8%へ鈍化</strong>。張り詰めていた地合いがほどけ、PSEiは+1.54%反発した。
+      </div>
+      <div class="column-body reveal" style="margin-top: -12px;">
+        ただ、戻り方には癖がある。真っ先に戻ったのは<strong style="color:var(--vn-gold)">真っ先に売られた銘柄</strong>だ。ICT（先週−7.73%→+13.62%）もJollibee（−7.03%→+7.41%）も、ファンダが変わったわけではなく「下げ過ぎの反動」。逆に先週の勝ち組SMC・JGSは反落した。これは<strong>テーマの転換ではなく振り子（ミーンリバージョン）</strong>だ。そして重力そのものは消えていない——CPIはまだ目標の倍の6.8%、ペソは61ペソ台後半で最弱圏、6/18のBSPは利上げ観測。原油という外部要因が緩んだだけで、国内の引き締めサイクルは続いている。反発を「転換」と読み違えないことが、この局面の作法だ。
+      </div>
+      <div class="column-highlight reveal">
+        「原油とCPIが一服すれば、真っ先に戻るのは真っ先に売られた銘柄。だがそれは振り子であって、トレンドの転換ではない。6.8%はまだ目標の倍、6/18も利上げ観測。反発は歓迎だが、重力（引き締め）が消えるまでは『一服』と数えておきたい。」
+      </div>
+    </div>
+
+    <div class="column-right-visual">
+      <div style="font-family:var(--font-sans-en);font-size:15px;letter-spacing:0.18em;color:rgba(255,255,255,0.5);text-transform:uppercase;margin-bottom:4px">一服と重力 ／ Bounce &amp; Gravity</div>
+      <div class="fact-card reveal">
+        <div class="fact-number">+13.62%</div>
+        <div class="fact-label"><strong style="color:var(--up-color)">ICT</strong>が先週最弱（−7.73%）から最大上昇へ逆転。時価総額最大ゆえ指数全体を牽引。</div>
+      </div>
+      <div class="fact-card reveal reveal-delay-1">
+        <div class="fact-number">6.8%</div>
+        <div class="fact-label">5月<strong style="color:var(--vn-gold)">CPI</strong>は4月7.2%から鈍化も、なお目標2〜4%の倍。米・とうもろこしは加速。</div>
+      </div>
+      <div class="fact-card reveal reveal-delay-2">
+        <div class="fact-number">6/18</div>
+        <div class="fact-label"><strong style="color:var(--vn-gold)">BSP会合</strong>はCPI鈍化でも利上げ観測（25〜50bp）。MUFGは年末5.25%予想。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a class="footer-brand" href="https://yumiba924-a11y.github.io/CQCHP/" target="_blank" rel="noopener" title="Capital Quest Corporation, Ltd. 公式サイトへ" style="display:inline-block;line-height:0;text-decoration:none"><img src="./assets/cqc_logo_white.png" alt="Capital Quest Corporation, Ltd."></a>
+      <div class="footer-dept"><a href="https://yumiba924-a11y.github.io/CQCHP/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">Capital Quest Corporation, Ltd. — 投資調査部</a></div>
+    </div>
+    <div class="footer-meta">
+      <div class="footer-issue">WEEKLY REPORT</div>
+      <div class="footer-date">2026.06.08</div>
+    </div>
+  </div>
+  <div class="footer-disclaimer">
+    本レポートはCapital Quest Corporation, Ltd.（CQC）投資調査部が情報提供のみを目的として作成したものであり、特定の金融商品の取得・売買・保有等を勧誘・推奨するものではありません。投資に関する最終判断は、利用者ご自身の責任と判断において行ってください。本資料は信頼できると判断した情報・データ（第三者提供データを含む）に基づき作成しておりますが、その正確性・完全性・適時性を保証するものではありません。本資料に記載した見解・予想・見通しは作成時点のものであり、将来の市場環境や運用成果を示唆・保証するものではなく、予告なく変更されることがあります。過去の実績・データは将来の成果を保証するものではありません。本資料の利用に起因して生じたいかなる損害についても、当社は一切の責任を負いません。本資料の全部または一部の無断転用・複製・再配布・改変はご遠慮ください。© 2026 Capital Quest Corporation, Ltd.
+  </div>
+</footer>
+
+
+<script>
+// ════════════════════════════════════════════════════════════
+// 🎬 HERO MEDIA CONFIG — 弓場さんの設定ゾーン
+// ────────────────────────────────────────────────────────────
+//
+// ▼ 動画を使う場合（MP4推奨）
+//   1. HTMLファイルと同じ場所に「ph_videos」フォルダを作成
+//   2. 動画ファイルを入れる
+//   3. 下の HERO_VIDEO にファイル名を記入
+//   動画がなければ自動的にスライドショーに切り替わります
+//
+const HERO_VIDEO = '';              // 例: 'hanoi_drone.mp4'  ← 動画を使うならここに記入
+const VIDEO_FOLDER = './ph_videos/';
+
+// ▼ 写真スライドショー設定
+//   1. HTMLファイルと同じ場所に「ph_photos」フォルダを作成
+//   2. 写真を入れて、下のリストにファイル名を追記
+//
+const PHOTO_FOLDER = './ph_photos/';
+const PHOTO_LIST = [
+  './ph_photos/photo01.jpg',
+  './ph_photos/photo02.jpg',
+  './ph_photos/photo03.jpg',
+];
+
+const SLIDE_INTERVAL = 5000;   // スライド間隔（ミリ秒）デフォルト5秒
+// ════════════════════════════════════════════════════════════
+
+const videoEl   = document.getElementById('heroVideo');
+const slideshow = document.getElementById('heroSlideshow');
+const dotsEl    = document.getElementById('heroDots');
+const counterEl = document.getElementById('heroCounter');
+const arrowL    = document.getElementById('arrowLeft');
+const arrowR    = document.getElementById('arrowRight');
+
+let currentIndex = 0;
+let timer = null;
+let slides = [];
+let usingVideo = false;
+
+// ── 動画モード ──────────────────────────────
+function tryVideo() {
+  if (!HERO_VIDEO) return initSlideshow();
+  const src = VIDEO_FOLDER + HERO_VIDEO;
+  videoEl.src = src;
+  videoEl.oncanplay = () => {
+    videoEl.classList.add('active');
+    usingVideo = true;
+    // 動画モードではアローとドット非表示
+    arrowL.style.display = 'none';
+    arrowR.style.display = 'none';
+    dotsEl.style.display = 'none';
+    counterEl.style.display = 'none';
+  };
+  videoEl.onerror = () => initSlideshow();
+  videoEl.load();
+}
+
+// ── スライドショーモード ─────────────────────
+function initSlideshow() {
+  // 写真を1枚ずつ先読みして追加
+  let loaded = 0;
+  let validPhotos = [];
+
+  PHOTO_LIST.forEach((name, i) => {
+    const img = new Image();
+    img.onload = () => {
+      validPhotos.push({ index: i, src: img.src });
+      loaded++;
+      if (loaded === PHOTO_LIST.length) buildSlideshow(validPhotos.sort((a,b)=>a.index-b.index).map(p=>p.src));
+    };
+    img.onerror = () => {
+      loaded++;
+      if (loaded === PHOTO_LIST.length) buildSlideshow(validPhotos.sort((a,b)=>a.index-b.index).map(p=>p.src));
+    };
+    img.src = name;
+  });
+}
+
+function buildSlideshow(photos) {
+  if (photos.length === 0) {
+    // フォールバック: グラデーション背景のみ
+    slideshow.style.background = 'linear-gradient(135deg, #001a0d 0%, #003a1e 40%, #1a0008 100%)';
+    arrowL.style.display = 'none';
+    arrowR.style.display = 'none';
+    return;
+  }
+
+  // スライド要素を生成
+  photos.forEach((src, i) => {
+    const div = document.createElement('div');
+    div.className = 'hero-slide' + (i === 0 ? ' active' : '');
+    div.style.backgroundImage = `url('${src}')`;
+    slideshow.appendChild(div);
+    slides.push(div);
+  });
+
+  // ドット生成
+  slides.forEach((_, i) => {
+    const dot = document.createElement('div');
+    dot.className = 'hero-dot' + (i === 0 ? ' active' : '');
+    dot.onclick = () => goTo(i);
+    dotsEl.appendChild(dot);
+  });
+
+  updateCounter();
+  startTimer();
+
+  arrowL.onclick = () => { goTo((currentIndex - 1 + slides.length) % slides.length); restartTimer(); };
+  arrowR.onclick = () => { goTo((currentIndex + 1) % slides.length); restartTimer(); };
+}
+
+function goTo(n) {
+  // 現在のスライドを非活性化
+  slides[currentIndex].classList.remove('active');
+  document.querySelectorAll('.hero-dot')[currentIndex]?.classList.remove('active');
+
+  currentIndex = n;
+
+  // Ken Burns アニメをリセットして再生
+  const s = slides[currentIndex];
+  s.style.animation = 'none';
+  s.offsetHeight; // reflow
+  s.style.animation = '';
+  s.classList.add('active');
+  document.querySelectorAll('.hero-dot')[currentIndex]?.classList.add('active');
+  updateCounter();
+}
+
+function updateCounter() {
+  if (slides.length > 1) counterEl.textContent = `${String(currentIndex+1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')}`;
+}
+
+function startTimer() {
+  timer = setInterval(() => goTo((currentIndex + 1) % slides.length), SLIDE_INTERVAL);
+}
+
+function restartTimer() {
+  clearInterval(timer);
+  startTimer();
+}
+
+// スワイプ対応（タッチ）
+let touchStartX = 0;
+document.querySelector('.hero').addEventListener('touchstart', e => touchStartX = e.touches[0].clientX);
+document.querySelector('.hero').addEventListener('touchend', e => {
+  const diff = touchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 50) {
+    goTo(diff > 0 ? (currentIndex+1)%slides.length : (currentIndex-1+slides.length)%slides.length);
+    restartTimer();
+  }
+});
+
+// 起動
+tryVideo();
+
+// ── Scroll Reveal ──
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => observer.observe(el));
+document.querySelectorAll('.hero .reveal').forEach(el => el.classList.add('visible'));
+</script>
+</body>
+</html>
